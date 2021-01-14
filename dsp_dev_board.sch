@@ -1,0 +1,398 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:TL072 U101
+U 1 1 5FFB8A7E
+P 5450 2400
+F 0 "U101" H 5450 2767 50  0000 C CNN
+F 1 "TL072" H 5450 2676 50  0000 C CNN
+F 2 "" H 5450 2400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5450 2400 50  0001 C CNN
+	1    5450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 5FFBB5A8
+P 6550 2400
+F 0 "R101" V 6343 2400 50  0000 C CNN
+F 1 "47" V 6434 2400 50  0000 C CNN
+F 2 "" V 6480 2400 50  0001 C CNN
+F 3 "~" H 6550 2400 50  0001 C CNN
+	1    6550 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FFBC04C
+P 7000 2900
+F 0 "#PWR0101" H 7000 2650 50  0001 C CNN
+F 1 "GND" H 7005 2727 50  0000 C CNN
+F 2 "" H 7000 2900 50  0001 C CNN
+F 3 "" H 7000 2900 50  0001 C CNN
+	1    7000 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2900 7000 2800
+$Comp
+L Device:D_Schottky D102
+U 1 1 5FFC1783
+P 7000 2650
+F 0 "D102" V 6954 2729 50  0000 L CNN
+F 1 "SS14" V 7045 2729 50  0000 L CNN
+F 2 "" H 7000 2650 50  0001 C CNN
+F 3 "~" H 7000 2650 50  0001 C CNN
+	1    7000 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U102
+U 1 1 5FFC29B1
+P 2050 2200
+F 0 "U102" H 2050 2442 50  0000 C CNN
+F 1 "AMS1117-3.3" H 2050 2351 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2050 2400 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2150 1950 50  0001 C CNN
+	1    2050 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5FFC34F5
+P 2050 2550
+F 0 "#PWR0103" H 2050 2300 50  0001 C CNN
+F 1 "GND" H 2055 2377 50  0000 C CNN
+F 2 "" H 2050 2550 50  0001 C CNN
+F 3 "" H 2050 2550 50  0001 C CNN
+	1    2050 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2550 2050 2500
+Text GLabel 2750 2200 2    50   Output ~ 0
+3.3V
+Wire Wire Line
+	2750 2200 2550 2200
+Text GLabel 1650 2200 0    50   Input ~ 0
+9V
+Wire Wire Line
+	1750 2200 1650 2200
+Text GLabel 7000 1950 1    50   Input ~ 0
+9V
+Wire Wire Line
+	7000 1950 7000 2000
+$Comp
+L Device:D_Schottky D101
+U 1 1 5FFC2017
+P 7000 2150
+F 0 "D101" V 6954 2229 50  0000 L CNN
+F 1 "SS14" V 7045 2229 50  0000 L CNN
+F 2 "" H 7000 2150 50  0001 C CNN
+F 3 "~" H 7000 2150 50  0001 C CNN
+	1    7000 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 2300 7000 2400
+Wire Wire Line
+	6700 2400 7000 2400
+Connection ~ 7000 2400
+Wire Wire Line
+	7000 2400 7000 2500
+$Comp
+L Device:C C101
+U 1 1 5FFCB053
+P 6100 2400
+F 0 "C101" V 5848 2400 50  0000 C CNN
+F 1 "1u" V 5939 2400 50  0000 C CNN
+F 2 "" H 6138 2250 50  0001 C CNN
+F 3 "~" H 6100 2400 50  0001 C CNN
+	1    6100 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 2400 6400 2400
+Wire Wire Line
+	5950 2400 5750 2400
+$Comp
+L Device:C C102
+U 1 1 5FFF9DB5
+P 1450 3500
+F 0 "C102" H 1565 3546 50  0000 L CNN
+F 1 "0.1u" H 1565 3455 50  0000 L CNN
+F 2 "" H 1488 3350 50  0001 C CNN
+F 3 "~" H 1450 3500 50  0001 C CNN
+	1    1450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5FFFA625
+P 1450 3700
+F 0 "#PWR0102" H 1450 3450 50  0001 C CNN
+F 1 "GND" H 1455 3527 50  0000 C CNN
+F 2 "" H 1450 3700 50  0001 C CNN
+F 3 "" H 1450 3700 50  0001 C CNN
+	1    1450 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3700 1450 3650
+$Comp
+L Device:R R102
+U 1 1 5FFFAD1A
+P 2050 3950
+F 0 "R102" H 2120 3996 50  0000 L CNN
+F 1 "3.3k" H 2120 3905 50  0000 L CNN
+F 2 "" V 1980 3950 50  0001 C CNN
+F 3 "~" H 2050 3950 50  0001 C CNN
+	1    2050 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3800 2050 3650
+$Comp
+L power:GND #PWR0104
+U 1 1 5FFFB4CC
+P 2050 4150
+F 0 "#PWR0104" H 2050 3900 50  0001 C CNN
+F 1 "GND" H 2055 3977 50  0000 C CNN
+F 2 "" H 2050 4150 50  0001 C CNN
+F 3 "" H 2050 4150 50  0001 C CNN
+	1    2050 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4150 2050 4100
+Wire Wire Line
+	1450 3350 1450 3250
+Wire Wire Line
+	1450 3250 1750 3250
+Text GLabel 1200 3250 0    50   Input ~ 0
+9V
+Wire Wire Line
+	1200 3250 1450 3250
+Connection ~ 1450 3250
+$Comp
+L Device:R R103
+U 1 1 5FFFC6B4
+P 2500 3650
+F 0 "R103" V 2293 3650 50  0000 C CNN
+F 1 "10k" V 2384 3650 50  0000 C CNN
+F 2 "" V 2430 3650 50  0001 C CNN
+F 3 "~" H 2500 3650 50  0001 C CNN
+	1    2500 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2350 3650 2050 3650
+Wire Wire Line
+	2050 3650 2050 3550
+Connection ~ 2050 3650
+Wire Wire Line
+	2350 3250 2800 3250
+Wire Wire Line
+	2800 3250 2800 3650
+Wire Wire Line
+	2800 3650 2650 3650
+$Comp
+L Device:C C103
+U 1 1 600014A5
+P 3150 3500
+F 0 "C103" H 3265 3546 50  0000 L CNN
+F 1 "0.1u" H 3265 3455 50  0000 L CNN
+F 2 "" H 3188 3350 50  0001 C CNN
+F 3 "~" H 3150 3500 50  0001 C CNN
+	1    3150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 600014AB
+P 3150 3700
+F 0 "#PWR0105" H 3150 3450 50  0001 C CNN
+F 1 "GND" H 3155 3527 50  0000 C CNN
+F 2 "" H 3150 3700 50  0001 C CNN
+F 3 "" H 3150 3700 50  0001 C CNN
+	1    3150 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 3700 3150 3650
+Wire Wire Line
+	2800 3250 3150 3250
+Wire Wire Line
+	3150 3250 3150 3350
+Connection ~ 2800 3250
+Text GLabel 3400 3250 2    50   Output ~ 0
+1.8V
+Wire Wire Line
+	3400 3250 3150 3250
+Connection ~ 3150 3250
+$Comp
+L Connector:Barrel_Jack J?
+U 1 1 60004038
+P 2050 1500
+F 0 "J?" H 2107 1825 50  0000 C CNN
+F 1 "Barrel_Jack" H 2107 1734 50  0000 C CNN
+F 2 "" H 2100 1460 50  0001 C CNN
+F 3 "~" H 2100 1460 50  0001 C CNN
+	1    2050 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2500 1400 2    50   Output ~ 0
+9V
+Wire Wire Line
+	2500 1400 2350 1400
+$Comp
+L power:GND #PWR?
+U 1 1 60005258
+P 2500 1700
+F 0 "#PWR?" H 2500 1450 50  0001 C CNN
+F 1 "GND" H 2505 1527 50  0000 C CNN
+F 2 "" H 2500 1700 50  0001 C CNN
+F 3 "" H 2500 1700 50  0001 C CNN
+	1    2500 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1700 2500 1600
+Wire Wire Line
+	2500 1600 2350 1600
+$Comp
+L Device:C C?
+U 1 1 60006D71
+P 2550 2450
+F 0 "C?" H 2665 2496 50  0000 L CNN
+F 1 "0.1u" H 2665 2405 50  0000 L CNN
+F 2 "" H 2588 2300 50  0001 C CNN
+F 3 "~" H 2550 2450 50  0001 C CNN
+	1    2550 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60006D77
+P 2550 2650
+F 0 "#PWR?" H 2550 2400 50  0001 C CNN
+F 1 "GND" H 2555 2477 50  0000 C CNN
+F 2 "" H 2550 2650 50  0001 C CNN
+F 3 "" H 2550 2650 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2650 2550 2600
+Wire Wire Line
+	2550 2200 2550 2300
+Text Notes 7400 7500 0    50   ~ 0
+audio dev board
+$Comp
+L Regulator_Linear:LM317A U?
+U 1 1 6000926A
+P 2050 3300
+F 0 "U?" H 2050 3615 50  0000 C CNN
+F 1 "LM317A" H 2050 3524 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 2100 3350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Unisonic-Tech-LM317AG-TN3-R_C75510.pdf" H 2100 3350 50  0001 C CNN
+	1    2050 3300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2550 2200
+Wire Wire Line
+	2550 2200 2350 2200
+Text Notes 950  950  0    50   ~ 10
+Power!
+Wire Notes Line
+	750  650  750  4550
+Wire Notes Line
+	750  4550 4000 4550
+Wire Notes Line
+	4000 4550 4000 650 
+Wire Notes Line
+	4000 650  750  650 
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 6002B25D
+P 1300 5500
+F 0 "J?" H 1332 5825 50  0000 C CNN
+F 1 "AudioJack2" H 1332 5734 50  0000 C CNN
+F 2 "" H 1300 5500 50  0001 C CNN
+F 3 "~" H 1300 5500 50  0001 C CNN
+	1    1300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6002C64C
+P 1800 5200
+F 0 "#PWR?" H 1800 4950 50  0001 C CNN
+F 1 "GND" H 1805 5027 50  0000 C CNN
+F 2 "" H 1800 5200 50  0001 C CNN
+F 3 "" H 1800 5200 50  0001 C CNN
+	1    1800 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5200 1800 5150
+Wire Wire Line
+	1800 5150 1600 5150
+Wire Wire Line
+	1600 5150 1600 5400
+Wire Wire Line
+	1600 5400 1500 5400
+Text GLabel 1600 5500 2    50   Output ~ 10
+audio_in
+Wire Wire Line
+	1600 5500 1500 5500
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 6003364D
+P 1300 6100
+F 0 "J?" H 1332 6425 50  0000 C CNN
+F 1 "AudioJack2" H 1332 6334 50  0000 C CNN
+F 2 "" H 1300 6100 50  0001 C CNN
+F 3 "~" H 1300 6100 50  0001 C CNN
+	1    1300 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60033653
+P 1800 5800
+F 0 "#PWR?" H 1800 5550 50  0001 C CNN
+F 1 "GND" H 1805 5627 50  0000 C CNN
+F 2 "" H 1800 5800 50  0001 C CNN
+F 3 "" H 1800 5800 50  0001 C CNN
+	1    1800 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 5800 1800 5750
+Wire Wire Line
+	1800 5750 1600 5750
+Wire Wire Line
+	1600 5750 1600 6000
+Wire Wire Line
+	1600 6000 1500 6000
+Text GLabel 1600 6100 2    50   Input ~ 10
+audio_out
+Wire Wire Line
+	1600 6100 1500 6100
+Text Notes 900  4850 0    50   ~ 10
+Audio IO!
+$EndSCHEMATC
