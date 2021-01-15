@@ -395,4 +395,15 @@ Wire Wire Line
 	1600 6100 1500 6100
 Text Notes 900  4850 0    50   ~ 10
 Audio IO!
+$Comp
+L Audio:TLV320AIC3101 U?
+U 1 1 6002E047
+P 5600 4850
+F 0 "U?" H 4850 6300 50  0000 C CNN
+F 1 "TLV320AIC3101" H 5100 6200 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.65x3.65mm" H 5050 6150 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tlv320aic3101.pdf" H 5050 6150 50  0001 C CNN
+	1    5600 4850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
