@@ -62,4 +62,72 @@ Wire Wire Line
 	4150 3700 3900 3700
 Wire Wire Line
 	4150 3800 3900 3800
+Text Label 6350 3150 2    50   ~ 0
+SWDIO
+Wire Wire Line
+	6350 3150 6450 3150
+Text Label 6350 3250 2    50   ~ 0
+SWCLK
+Text Label 6350 3550 2    50   ~ 0
+JTDI
+Text Label 6350 3350 2    50   ~ 0
+TRACESWO
+Wire Wire Line
+	6350 3250 6450 3250
+Wire Wire Line
+	6350 3650 6450 3650
+Text Label 6350 3450 2    50   ~ 0
+NJTRST
+Wire Wire Line
+	6350 3450 6450 3450
+Wire Wire Line
+	6350 3350 6450 3350
+Wire Wire Line
+	6350 3550 6450 3550
+Text GLabel 6350 3650 0    50   Output ~ 0
+3.3V
+$Comp
+L power:GND #PWR010
+U 1 1 60166405
+P 6350 3750
+F 0 "#PWR010" H 6350 3500 50  0001 C CNN
+F 1 "GND" H 6355 3577 50  0000 C CNN
+F 2 "" H 6350 3750 50  0001 C CNN
+F 3 "" H 6350 3750 50  0001 C CNN
+	1    6350 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3750 6450 3750
+$Comp
+L Connector_Generic:Conn_01x07 J4
+U 1 1 601675AC
+P 6650 3450
+F 0 "J4" H 6730 3492 50  0000 L CNN
+F 1 "debug" H 6730 3401 50  0000 L CNN
+F 2 "" H 6650 3450 50  0001 C CNN
+F 3 "~" H 6650 3450 50  0001 C CNN
+	1    6650 3450
+	1    0    0    -1  
+$EndComp
+Text Label 4150 2700 0    50   ~ 0
+SWDIO
+Wire Wire Line
+	4150 2700 3900 2700
+Text Label 4150 2800 0    50   ~ 0
+SWCLK
+Wire Wire Line
+	4150 2800 3900 2800
+Text Label 4150 2900 0    50   ~ 0
+JTDI
+Wire Wire Line
+	4150 2900 3900 2900
+Text Label 4150 3400 0    50   ~ 0
+TRACESWO
+Wire Wire Line
+	4150 3400 3900 3400
+Text Label 4150 3500 0    50   ~ 0
+NJTRST
+Wire Wire Line
+	4150 3500 3900 3500
 $EndSCHEMATC
