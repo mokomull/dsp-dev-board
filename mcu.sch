@@ -24,4 +24,42 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    3000 3800
 	1    0    0    -1  
 $EndComp
+Text HLabel 4100 5700 2    50   Output ~ 0
+MCLK
+Text HLabel 4150 4100 2    50   Input ~ 0
+BCLK
+Text HLabel 4150 4000 2    50   Input ~ 0
+WCLK
+Text HLabel 4150 3100 2    50   Output ~ 0
+~RESET
+Text HLabel 4150 3700 2    50   Output ~ 0
+SCL
+Text HLabel 4150 3800 2    50   BiDi ~ 0
+SDA
+Text HLabel 4100 5100 2    50   Output ~ 0
+I2S_SD
+Text HLabel 4100 5000 2    50   Input ~ 0
+I2Sext_SD
+Wire Wire Line
+	4100 5100 3900 5100
+Wire Wire Line
+	4100 5000 3900 5000
+Wire Wire Line
+	4100 5700 3900 5700
+Text Notes 4400 5700 0    50   ~ 0
+MCO2
+Text Notes 4550 5000 0    50   ~ 0
+data in
+Text Notes 4550 5100 0    50   ~ 0
+data out
+Wire Wire Line
+	4150 4000 3900 4000
+Wire Wire Line
+	4150 4100 3900 4100
+Wire Wire Line
+	4150 3100 3900 3100
+Wire Wire Line
+	4150 3700 3900 3700
+Wire Wire Line
+	4150 3800 3900 3800
 $EndSCHEMATC
