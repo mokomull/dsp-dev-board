@@ -30,12 +30,6 @@ Text HLabel 4150 4100 2    50   Input ~ 0
 BCLK
 Text HLabel 4150 4000 2    50   Input ~ 0
 WCLK
-Text HLabel 4150 3100 2    50   Output ~ 0
-~RESET
-Text HLabel 4150 3700 2    50   Output ~ 0
-SCL
-Text HLabel 4150 3800 2    50   BiDi ~ 0
-SDA
 Text HLabel 4100 5100 2    50   Output ~ 0
 I2S_SD
 Text HLabel 4100 5000 2    50   Input ~ 0
@@ -56,12 +50,6 @@ Wire Wire Line
 	4150 4000 3900 4000
 Wire Wire Line
 	4150 4100 3900 4100
-Wire Wire Line
-	4150 3100 3900 3100
-Wire Wire Line
-	4150 3700 3900 3700
-Wire Wire Line
-	4150 3800 3900 3800
 Text Label 6350 3150 2    50   ~ 0
 SWDIO
 Wire Wire Line
@@ -130,4 +118,16 @@ Text Label 4150 3500 0    50   ~ 0
 NJTRST
 Wire Wire Line
 	4150 3500 3900 3500
+Text HLabel 4100 5800 2    50   Output ~ 0
+SCLK
+Text HLabel 4100 5900 2    50   Output ~ 0
+~CSB
+Text HLabel 4100 6000 2    50   Output ~ 0
+SDOUT
+Wire Wire Line
+	4100 6000 3900 6000
+Wire Wire Line
+	4100 5800 3900 5800
+Wire Wire Line
+	4100 5900 3900 5900
 $EndSCHEMATC
