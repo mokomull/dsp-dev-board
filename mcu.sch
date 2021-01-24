@@ -527,4 +527,96 @@ Wire Wire Line
 	2700 1050 2800 1050
 Connection ~ 2700 1050
 Connection ~ 2800 1050
+$Comp
+L power:GND #PWR018
+U 1 1 6007ECDF
+P 1450 1600
+F 0 "#PWR018" H 1450 1350 50  0001 C CNN
+F 1 "GND" H 1455 1427 50  0000 C CNN
+F 2 "" H 1450 1600 50  0001 C CNN
+F 3 "" H 1450 1600 50  0001 C CNN
+	1    1450 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1600 2100 1600
+$Comp
+L Device:Crystal Y1
+U 1 1 600E34F2
+P 6800 5100
+F 0 "Y1" H 6800 5368 50  0000 C CNN
+F 1 "12Mhz" H 6800 5277 50  0000 C CNN
+F 2 "" H 6800 5100 50  0001 C CNN
+F 3 "~" H 6800 5100 50  0001 C CNN
+	1    6800 5100
+	1    0    0    -1  
+$EndComp
+Text Label 2000 2800 2    50   ~ 0
+osc_in
+Wire Wire Line
+	2000 2800 2100 2800
+Wire Wire Line
+	2000 2900 2100 2900
+Text Label 2000 2900 2    50   ~ 0
+osc_out
+$Comp
+L Device:C C30
+U 1 1 600EA749
+P 6400 5400
+F 0 "C30" H 6515 5446 50  0000 L CNN
+F 1 "20pf" H 6515 5355 50  0000 L CNN
+F 2 "" H 6438 5250 50  0001 C CNN
+F 3 "~" H 6400 5400 50  0001 C CNN
+	1    6400 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C31
+U 1 1 600EB2AF
+P 7150 5400
+F 0 "C31" H 7265 5446 50  0000 L CNN
+F 1 "20pf" H 7265 5355 50  0000 L CNN
+F 2 "" H 7188 5250 50  0001 C CNN
+F 3 "~" H 7150 5400 50  0001 C CNN
+	1    7150 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 5250 7150 5100
+Wire Wire Line
+	7150 5100 6950 5100
+Wire Wire Line
+	6400 5250 6400 5100
+Wire Wire Line
+	6400 5100 6650 5100
+Wire Wire Line
+	6400 5550 6400 5650
+Wire Wire Line
+	6400 5650 6800 5650
+Wire Wire Line
+	7150 5650 7150 5550
+$Comp
+L power:GND #PWR019
+U 1 1 600F5882
+P 6800 5650
+F 0 "#PWR019" H 6800 5400 50  0001 C CNN
+F 1 "GND" H 6805 5477 50  0000 C CNN
+F 2 "" H 6800 5650 50  0001 C CNN
+F 3 "" H 6800 5650 50  0001 C CNN
+	1    6800 5650
+	1    0    0    -1  
+$EndComp
+Connection ~ 6800 5650
+Wire Wire Line
+	6800 5650 7150 5650
+Wire Wire Line
+	6400 5100 6400 4650
+Connection ~ 6400 5100
+Wire Wire Line
+	7150 5100 7150 4650
+Connection ~ 7150 5100
+Text Label 7150 4650 0    50   ~ 0
+osc_out
+Text Label 6400 4650 0    50   ~ 0
+osc_in
 $EndSCHEMATC
