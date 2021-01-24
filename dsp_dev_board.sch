@@ -59,38 +59,6 @@ F 3 "~" H 9850 2050 50  0001 C CNN
 	1    9850 2050
 	0    1    1    0   
 $EndComp
-$Comp
-L Regulator_Linear:AMS1117-3.3 U102
-U 1 1 5FFC29B1
-P 2050 2200
-F 0 "U102" H 2050 2442 50  0000 C CNN
-F 1 "AMS1117-3.3" H 2050 2351 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2050 2400 50  0001 C CNN
-F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2150 1950 50  0001 C CNN
-	1    2050 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5FFC34F5
-P 2050 2550
-F 0 "#PWR0103" H 2050 2300 50  0001 C CNN
-F 1 "GND" H 2055 2377 50  0000 C CNN
-F 2 "" H 2050 2550 50  0001 C CNN
-F 3 "" H 2050 2550 50  0001 C CNN
-	1    2050 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2050 2550 2050 2500
-Text GLabel 2750 2200 2    50   Output ~ 0
-3.3V
-Wire Wire Line
-	2750 2200 2550 2200
-Text GLabel 1650 2200 0    50   Input ~ 0
-9V
-Wire Wire Line
-	1750 2200 1650 2200
 Text GLabel 9850 1350 1    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -133,7 +101,7 @@ L Connector:Barrel_Jack J1
 U 1 1 60004038
 P 2050 1500
 F 0 "J1" H 2107 1825 50  0000 C CNN
-F 1 "Barrel_Jack" H 2107 1734 50  0000 C CNN
+F 1 "9v_jack" H 2107 1734 50  0000 C CNN
 F 2 "" H 2100 1460 50  0001 C CNN
 F 3 "~" H 2100 1460 50  0001 C CNN
 	1    2050 1500
@@ -158,105 +126,29 @@ Wire Wire Line
 	2500 1700 2500 1600
 Wire Wire Line
 	2500 1600 2350 1600
-$Comp
-L Device:C C1
-U 1 1 60006D71
-P 2550 2450
-F 0 "C1" H 2665 2496 50  0000 L CNN
-F 1 "0.1u" H 2665 2405 50  0000 L CNN
-F 2 "" H 2588 2300 50  0001 C CNN
-F 3 "~" H 2550 2450 50  0001 C CNN
-	1    2550 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR04
-U 1 1 60006D77
-P 2550 2650
-F 0 "#PWR04" H 2550 2400 50  0001 C CNN
-F 1 "GND" H 2555 2477 50  0000 C CNN
-F 2 "" H 2550 2650 50  0001 C CNN
-F 3 "" H 2550 2650 50  0001 C CNN
-	1    2550 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 2650 2550 2600
-Wire Wire Line
-	2550 2200 2550 2300
-Connection ~ 2550 2200
-Wire Wire Line
-	2550 2200 2350 2200
 Text Notes 950  950  0    50   ~ 10
 Power!
 $Comp
-L Connector:AudioJack2 J2
-U 1 1 6002B25D
-P 4300 1800
-F 0 "J2" H 4332 2125 50  0000 C CNN
-F 1 "AudioJack2" H 4332 2034 50  0000 C CNN
-F 2 "" H 4300 1800 50  0001 C CNN
-F 3 "~" H 4300 1800 50  0001 C CNN
-	1    4300 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR05
 U 1 1 6002C64C
-P 4800 1500
-F 0 "#PWR05" H 4800 1250 50  0001 C CNN
-F 1 "GND" H 4805 1327 50  0000 C CNN
-F 2 "" H 4800 1500 50  0001 C CNN
-F 3 "" H 4800 1500 50  0001 C CNN
-	1    4800 1500
+P 4700 1500
+F 0 "#PWR05" H 4700 1250 50  0001 C CNN
+F 1 "GND" H 4705 1327 50  0000 C CNN
+F 2 "" H 4700 1500 50  0001 C CNN
+F 3 "" H 4700 1500 50  0001 C CNN
+	1    4700 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 1500 4800 1450
+	4700 1500 4700 1450
 Wire Wire Line
-	4800 1450 4600 1450
+	4700 1450 4500 1450
 Wire Wire Line
-	4600 1450 4600 1700
+	4500 1450 4500 1700
 Wire Wire Line
-	4600 1700 4500 1700
-Text GLabel 4600 1800 2    50   Output ~ 10
-jack_in
+	4500 1700 4400 1700
 Wire Wire Line
-	4600 1800 4500 1800
-$Comp
-L Connector:AudioJack2 J3
-U 1 1 6003364D
-P 4300 2400
-F 0 "J3" H 4332 2725 50  0000 C CNN
-F 1 "AudioJack2" H 4332 2634 50  0000 C CNN
-F 2 "" H 4300 2400 50  0001 C CNN
-F 3 "~" H 4300 2400 50  0001 C CNN
-	1    4300 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 60033653
-P 4800 2100
-F 0 "#PWR06" H 4800 1850 50  0001 C CNN
-F 1 "GND" H 4805 1927 50  0000 C CNN
-F 2 "" H 4800 2100 50  0001 C CNN
-F 3 "" H 4800 2100 50  0001 C CNN
-	1    4800 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4800 2100 4800 2050
-Wire Wire Line
-	4800 2050 4600 2050
-Wire Wire Line
-	4600 2050 4600 2300
-Wire Wire Line
-	4600 2300 4500 2300
-Text GLabel 4600 2400 2    50   Input ~ 10
-jack_out
-Wire Wire Line
-	4600 2400 4500 2400
+	4500 1900 4400 1900
 Text Notes 3900 1150 0    50   ~ 10
 Audio IO!
 $Sheet
@@ -299,8 +191,6 @@ Wire Wire Line
 Connection ~ 8650 1800
 Wire Wire Line
 	8650 1800 8600 1800
-Text GLabel 6850 1900 0    50   Input ~ 10
-jack_in
 $Comp
 L Device:C C2
 U 1 1 6009770B
@@ -459,8 +349,6 @@ Text Label 6750 3150 2    50   ~ 0
 audio_out
 Wire Wire Line
 	6750 3150 7050 3150
-Text GLabel 9250 3050 2    50   Output ~ 0
-jack_out
 Text Label 8600 4950 0    50   ~ 0
 audio_out
 Wire Wire Line
@@ -539,4 +427,210 @@ $EndComp
 Wire Wire Line
 	8800 3050 8650 3050
 Connection ~ 8650 3050
+NoConn ~ 4400 1800
+NoConn ~ 4400 2000
+$Comp
+L Connector:AudioJack2_Switch J3
+U 1 1 601CE4FA
+P 4200 1900
+F 0 "J3" H 4100 2350 50  0000 C CNN
+F 1 "input_jack" H 4050 2250 50  0000 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HCD2_Horizontal" H 4200 2100 50  0001 C CNN
+F 3 "~" H 4200 2100 50  0001 C CNN
+	1    4200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 601D9CA8
+P 4700 2200
+F 0 "#PWR020" H 4700 1950 50  0001 C CNN
+F 1 "GND" H 4705 2027 50  0000 C CNN
+F 2 "" H 4700 2200 50  0001 C CNN
+F 3 "" H 4700 2200 50  0001 C CNN
+	1    4700 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2200 4700 2150
+Wire Wire Line
+	4700 2150 4500 2150
+Wire Wire Line
+	4500 2150 4500 2400
+Wire Wire Line
+	4500 2400 4400 2400
+Wire Wire Line
+	4500 2600 4400 2600
+NoConn ~ 4400 2500
+NoConn ~ 4400 2700
+$Comp
+L Connector:AudioJack2_Switch J7
+U 1 1 601D9CB6
+P 4200 2600
+F 0 "J7" H 4100 3050 50  0000 C CNN
+F 1 "output_jack" H 4050 2950 50  0000 C CNN
+F 2 "Connector_Audio:Jack_6.35mm_Neutrik_NMJ4HCD2_Horizontal" H 4200 2800 50  0001 C CNN
+F 3 "~" H 4200 2800 50  0001 C CNN
+	1    4200 2600
+	1    0    0    -1  
+$EndComp
+Text Label 4500 1900 0    50   ~ 0
+audio_jack_in
+Text Label 4500 2600 0    50   ~ 0
+audio_jack_out
+Text Label 6850 1900 2    50   ~ 0
+audio_jack_in
+Text Label 9250 3050 0    50   ~ 0
+audio_jack_out
+Wire Wire Line
+	2550 2400 2350 2400
+Connection ~ 2550 2400
+Wire Wire Line
+	2550 2400 2550 2500
+Wire Wire Line
+	2550 2850 2550 2800
+$Comp
+L power:GND #PWR04
+U 1 1 60006D77
+P 2550 2850
+F 0 "#PWR04" H 2550 2600 50  0001 C CNN
+F 1 "GND" H 2555 2677 50  0000 C CNN
+F 2 "" H 2550 2850 50  0001 C CNN
+F 3 "" H 2550 2850 50  0001 C CNN
+	1    2550 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60006D71
+P 2550 2650
+F 0 "C1" H 2665 2696 50  0000 L CNN
+F 1 "0.1u" H 2665 2605 50  0000 L CNN
+F 2 "" H 2588 2500 50  0001 C CNN
+F 3 "~" H 2550 2650 50  0001 C CNN
+	1    2550 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2400 1650 2400
+Text GLabel 1650 2400 0    50   Input ~ 0
+9V
+Wire Wire Line
+	2750 2400 2550 2400
+Text GLabel 2750 2400 2    50   Output ~ 0
+3.3V
+Wire Wire Line
+	2050 2750 2050 2700
+$Comp
+L power:GND #PWR0103
+U 1 1 5FFC34F5
+P 2050 2750
+F 0 "#PWR0103" H 2050 2500 50  0001 C CNN
+F 1 "GND" H 2055 2577 50  0000 C CNN
+F 2 "" H 2050 2750 50  0001 C CNN
+F 3 "" H 2050 2750 50  0001 C CNN
+	1    2050 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:AMS1117-3.3 U102
+U 1 1 5FFC29B1
+P 2050 2400
+F 0 "U102" H 2050 2642 50  0000 C CNN
+F 1 "AMS1117-3.3" H 2050 2551 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2050 2600 50  0001 C CNN
+F 3 "http://www.advanced-monolithic.com/pdf/ds1117.pdf" H 2150 2150 50  0001 C CNN
+	1    2050 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 601E5519
+P 1800 5600
+F 0 "J2" H 1550 5800 50  0000 C CNN
+F 1 "aux_mcu_power" H 1550 5700 50  0000 C CNN
+F 2 "" H 1800 5600 50  0001 C CNN
+F 3 "~" H 1800 5600 50  0001 C CNN
+	1    1800 5600
+	1    0    0    -1  
+$EndComp
+Text GLabel 2150 5600 2    50   Input ~ 0
+3.3V
+$Comp
+L power:GND #PWR06
+U 1 1 601E6A36
+P 2150 5750
+F 0 "#PWR06" H 2150 5500 50  0001 C CNN
+F 1 "GND" H 2155 5577 50  0000 C CNN
+F 2 "" H 2150 5750 50  0001 C CNN
+F 3 "" H 2150 5750 50  0001 C CNN
+	1    2150 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 5750 2150 5700
+Wire Wire Line
+	2150 5700 2000 5700
+Wire Wire Line
+	2000 5600 2150 5600
+Text Label 2150 6200 0    50   ~ 0
+audio_jack_in
+Wire Wire Line
+	2150 6200 2000 6200
+Text Label 2150 6850 0    50   ~ 0
+audio_jack_out
+$Comp
+L Connector:Conn_01x02_Male J8
+U 1 1 6026815E
+P 1800 6200
+F 0 "J8" H 1550 6400 50  0000 C CNN
+F 1 "audio_in" H 1550 6300 50  0000 C CNN
+F 2 "" H 1800 6200 50  0001 C CNN
+F 3 "~" H 1800 6200 50  0001 C CNN
+	1    1800 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 6026A61A
+P 2150 6350
+F 0 "#PWR021" H 2150 6100 50  0001 C CNN
+F 1 "GND" H 2155 6177 50  0000 C CNN
+F 2 "" H 2150 6350 50  0001 C CNN
+F 3 "" H 2150 6350 50  0001 C CNN
+	1    2150 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6350 2150 6300
+Wire Wire Line
+	2150 6300 2000 6300
+Wire Wire Line
+	2150 6850 2000 6850
+$Comp
+L Connector:Conn_01x02_Male J9
+U 1 1 60272181
+P 1800 6850
+F 0 "J9" H 1550 7050 50  0000 C CNN
+F 1 "audio_out" H 1550 6950 50  0000 C CNN
+F 2 "" H 1800 6850 50  0001 C CNN
+F 3 "~" H 1800 6850 50  0001 C CNN
+	1    1800 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 60272187
+P 2150 7000
+F 0 "#PWR026" H 2150 6750 50  0001 C CNN
+F 1 "GND" H 2155 6827 50  0000 C CNN
+F 2 "" H 2150 7000 50  0001 C CNN
+F 3 "" H 2150 7000 50  0001 C CNN
+	1    2150 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 7000 2150 6950
+Wire Wire Line
+	2150 6950 2000 6950
 $EndSCHEMATC
