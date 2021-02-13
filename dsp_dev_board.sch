@@ -150,14 +150,14 @@ S 6150 5000 750  1000
 U 60038522
 F0 "MCU" 50
 F1 "mcu.sch" 50
-F2 "MCLK" O R 6900 5150 50 
-F3 "BCLK" I R 6900 5450 50 
-F4 "WCLK" I R 6900 5550 50 
-F5 "I2S_SD" O R 6900 5350 50 
-F6 "I2Sext_SD" I R 6900 5250 50 
-F7 "SCLK" O R 6900 5700 50 
-F8 "~CSB" O R 6900 5800 50 
-F9 "SDOUT" O R 6900 5900 50 
+F2 "BCLK" I R 6900 5450 50 
+F3 "WCLK" I R 6900 5550 50 
+F4 "I2S_SD" O R 6900 5350 50 
+F5 "I2Sext_SD" I R 6900 5250 50 
+F6 "SCLK" O R 6900 5700 50 
+F7 "~CSB" O R 6900 5800 50 
+F8 "SDOUT" O R 6900 5900 50 
+F9 "I2S2_MCK" O R 6900 5150 50 
 $EndSheet
 Text Label 10250 1800 0    50   ~ 0
 audio_in
@@ -553,11 +553,11 @@ Wire Wire Line
 Wire Wire Line
 	2000 5600 2150 5600
 Text Label 2150 6200 0    50   ~ 0
-audio_jack_in
+audio_in
 Wire Wire Line
 	2150 6200 2000 6200
 Text Label 2150 6850 0    50   ~ 0
-audio_jack_out
+audio_out
 $Comp
 L Connector:Conn_01x02_Male J2
 U 1 1 6026815E
