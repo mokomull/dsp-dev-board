@@ -153,10 +153,8 @@ Text HLabel 5250 3950 0    50   Input ~ 0
 SDIN
 Wire Wire Line
 	5250 3950 5400 3950
-Text GLabel 5250 4250 0    50   Input ~ 0
+Text GLabel 4400 4250 0    50   Input ~ 0
 3.3V
-Wire Wire Line
-	5250 4250 5400 4250
 Text GLabel 1950 2650 0    50   Input ~ 0
 3.3V
 Wire Wire Line
@@ -430,4 +428,19 @@ Text Label 6300 3050 1    50   ~ 0
 HPVDD
 Wire Wire Line
 	6300 3050 6300 3150
+$Comp
+L Device:R R18
+U 1 1 6039A986
+P 4650 4250
+F 0 "R18" V 4443 4250 50  0000 C CNN
+F 1 "10k" V 4534 4250 50  0000 C CNN
+F 2 "" V 4580 4250 50  0001 C CNN
+F 3 "~" H 4650 4250 50  0001 C CNN
+	1    4650 4250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4250 4400 4250
+Wire Wire Line
+	4800 4250 5400 4250
 $EndSCHEMATC
