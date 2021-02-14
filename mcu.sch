@@ -733,25 +733,14 @@ Wire Wire Line
 Wire Wire Line
 	1950 5400 2000 5400
 $Comp
-L Connector_Generic:Conn_01x08 J8
+L Connector_Generic:Conn_01x08 J7
 U 1 1 605BF3D9
 P 1750 5700
-F 0 "J8" H 2100 5800 50  0000 C CNN
-F 1 "PD8-15" H 2100 5650 50  0000 C CNN
+F 0 "J7" H 2100 5800 50  0000 C CNN
+F 1 "PD8-15 (digital)" H 2200 5650 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1750 5700 50  0001 C CNN
 F 3 "~" H 1750 5700 50  0001 C CNN
 	1    1750 5700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x08 J7
-U 1 1 605777EA
-P 1750 4900
-F 0 "J7" H 2100 5000 50  0000 C CNN
-F 1 "PD0-7" H 2100 4850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1750 4900 50  0001 C CNN
-F 3 "~" H 1750 4900 50  0001 C CNN
-	1    1750 4900
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -827,30 +816,14 @@ Wire Wire Line
 	3800 1300 4050 1300
 Wire Wire Line
 	4050 1200 3800 1200
-Text Label 4050 1500 0    50   ~ 0
+Text Label 4050 3600 0    50   ~ 0
 led4
-Text Label 4050 1400 0    50   ~ 0
+Text Label 4050 3500 0    50   ~ 0
 led3
-Text Label 4050 1300 0    50   ~ 0
+Text Label 4050 3400 0    50   ~ 0
 led2
-Text Label 4050 1200 0    50   ~ 0
+Text Label 4050 3300 0    50   ~ 0
 led1
-Wire Wire Line
-	1950 5300 2000 5300
-Wire Wire Line
-	1950 5200 2000 5200
-Wire Wire Line
-	1950 5100 2000 5100
-Wire Wire Line
-	1950 5000 2000 5000
-Wire Wire Line
-	1950 4900 2000 4900
-Wire Wire Line
-	1950 4800 2000 4800
-Wire Wire Line
-	1950 4700 2000 4700
-Wire Wire Line
-	1950 4600 2000 4600
 Text Label 1900 2700 2    50   ~ 0
 osc_out
 Wire Wire Line
@@ -946,9 +919,9 @@ Wire Wire Line
 Text Label 4050 2500 0    50   ~ 0
 SWDIO
 Wire Wire Line
-	4050 3900 3800 3900
+	4000 4200 3800 4200
 Wire Wire Line
-	4050 3800 3800 3800
+	4000 4100 3800 4100
 Text Notes 4450 4400 0    50   ~ 0
 data out
 Text Notes 4450 4300 0    50   ~ 0
@@ -961,9 +934,9 @@ Text HLabel 4000 4300 2    50   Input ~ 0
 I2Sext_SD
 Text HLabel 4000 4400 2    50   Output ~ 0
 I2S_SD
-Text HLabel 4050 3800 2    50   Input ~ 0
+Text HLabel 4000 4100 2    50   Input ~ 0
 WCLK
-Text HLabel 4050 3900 2    50   Input ~ 0
+Text HLabel 4000 4200 2    50   Input ~ 0
 BCLK
 $Comp
 L MCU_ST_STM32F4:STM32F407VETx U3
@@ -1189,12 +1162,6 @@ NoConn ~ 2000 4200
 NoConn ~ 2000 4300
 NoConn ~ 2000 4400
 NoConn ~ 3800 4000
-NoConn ~ 3800 4100
-NoConn ~ 3800 4200
-NoConn ~ 3800 3300
-NoConn ~ 3800 3400
-NoConn ~ 3800 3500
-NoConn ~ 3800 3600
 NoConn ~ 3800 3700
 NoConn ~ 3800 2900
 NoConn ~ 3800 3000
@@ -1202,10 +1169,6 @@ NoConn ~ 3800 3100
 NoConn ~ 3800 2700
 NoConn ~ 3800 2200
 NoConn ~ 3800 2000
-NoConn ~ 3800 1900
-NoConn ~ 3800 1800
-NoConn ~ 3800 1700
-NoConn ~ 3800 1600
 NoConn ~ 3800 4600
 NoConn ~ 3800 4700
 NoConn ~ 3800 5000
@@ -1359,4 +1322,41 @@ F 7 "1" H 6850 4500 50  0001 L BNN "PARTREV"
 $EndComp
 NoConn ~ 3800 4900
 NoConn ~ 3800 4800
+NoConn ~ 3800 3800
+NoConn ~ 3800 3900
+$Comp
+L Connector_Generic:Conn_01x08 J8
+U 1 1 60E25F3D
+P 4250 1500
+F 0 "J8" H 4600 1600 50  0000 C CNN
+F 1 "PA0-7 (analog)" H 4650 1450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 4250 1500 50  0001 C CNN
+F 3 "~" H 4250 1500 50  0001 C CNN
+	1    4250 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1600 4050 1600
+Wire Wire Line
+	3800 1700 4050 1700
+Wire Wire Line
+	3800 1800 4050 1800
+Wire Wire Line
+	3800 1900 4050 1900
+Wire Wire Line
+	4050 3300 3800 3300
+Wire Wire Line
+	3800 3400 4050 3400
+Wire Wire Line
+	4050 3500 3800 3500
+Wire Wire Line
+	3800 3600 4050 3600
+NoConn ~ 2000 4600
+NoConn ~ 2000 4700
+NoConn ~ 2000 4800
+NoConn ~ 2000 4900
+NoConn ~ 2000 5000
+NoConn ~ 2000 5100
+NoConn ~ 2000 5200
+NoConn ~ 2000 5300
 $EndSCHEMATC
