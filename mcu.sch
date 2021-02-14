@@ -949,17 +949,17 @@ Wire Wire Line
 	4050 3900 3800 3900
 Wire Wire Line
 	4050 3800 3800 3800
-Text Notes 4450 4900 0    50   ~ 0
+Text Notes 4450 4400 0    50   ~ 0
 data out
-Text Notes 4450 4800 0    50   ~ 0
+Text Notes 4450 4300 0    50   ~ 0
 data in
 Wire Wire Line
-	4000 4800 3800 4800
+	4000 4300 3800 4300
 Wire Wire Line
-	4000 4900 3800 4900
-Text HLabel 4000 4800 2    50   Input ~ 0
+	4000 4400 3800 4400
+Text HLabel 4000 4300 2    50   Input ~ 0
 I2Sext_SD
-Text HLabel 4000 4900 2    50   Output ~ 0
+Text HLabel 4000 4400 2    50   Output ~ 0
 I2S_SD
 Text HLabel 4050 3800 2    50   Input ~ 0
 WCLK
@@ -1191,8 +1191,6 @@ NoConn ~ 2000 4400
 NoConn ~ 3800 4000
 NoConn ~ 3800 4100
 NoConn ~ 3800 4200
-NoConn ~ 3800 4300
-NoConn ~ 3800 4400
 NoConn ~ 3800 3300
 NoConn ~ 3800 3400
 NoConn ~ 3800 3500
@@ -1359,4 +1357,6 @@ F 7 "1" H 6850 4500 50  0001 L BNN "PARTREV"
 	1    6850 4500
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3800 4900
+NoConn ~ 3800 4800
 $EndSCHEMATC
