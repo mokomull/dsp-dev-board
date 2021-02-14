@@ -756,80 +756,14 @@ Wire Wire Line
 Connection ~ 8200 4200
 Wire Wire Line
 	6650 4200 8200 4200
-$Comp
-L Switch:SW_MEC_5E SW1
-U 1 1 602AEEE9
-P 8850 5800
-F 0 "SW1" H 8850 6185 50  0000 C CNN
-F 1 "SW_MEC_5E" H 8850 6094 50  0000 C CNN
-F 2 "" H 8850 6100 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 8850 6100 50  0001 C CNN
-	1    8850 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_MEC_5E SW2
-U 1 1 602B029E
-P 8850 6350
-F 0 "SW2" H 8850 6735 50  0000 C CNN
-F 1 "SW_MEC_5E" H 8850 6644 50  0000 C CNN
-F 2 "" H 8850 6650 50  0001 C CNN
-F 3 "http://www.apem.com/int/index.php?controller=attachment&id_attachment=1371" H 8850 6650 50  0001 C CNN
-	1    8850 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8650 5700 8600 5700
-Wire Wire Line
-	8600 5700 8600 5750
-Wire Wire Line
-	8600 5800 8650 5800
-Text Label 8500 5750 2    50   ~ 0
+Text Label 7850 5800 2    50   ~ 0
 BOOT0
-Wire Wire Line
-	8500 5750 8600 5750
-Connection ~ 8600 5750
-Wire Wire Line
-	8600 5750 8600 5800
-Text GLabel 9150 5750 2    50   Input ~ 0
+Text GLabel 8650 5800 2    50   Input ~ 0
 3.3V
-Wire Wire Line
-	9050 5700 9100 5700
-Wire Wire Line
-	9100 5700 9100 5750
-Wire Wire Line
-	9100 5800 9050 5800
-Wire Wire Line
-	9150 5750 9100 5750
-Connection ~ 9100 5750
-Wire Wire Line
-	9100 5750 9100 5800
-Text Label 8500 6300 2    50   ~ 0
+Text Label 7850 6200 2    50   ~ 0
 NRST
-Wire Wire Line
-	8500 6300 8600 6300
-Wire Wire Line
-	8600 6300 8600 6250
-Wire Wire Line
-	8600 6250 8650 6250
-Wire Wire Line
-	8600 6300 8600 6350
-Wire Wire Line
-	8600 6350 8650 6350
-Connection ~ 8600 6300
-Text GLabel 9150 6300 2    50   Input ~ 0
+Text GLabel 8650 6200 2    50   Input ~ 0
 3.3V
-Wire Wire Line
-	9050 6250 9100 6250
-Wire Wire Line
-	9100 6250 9100 6300
-Wire Wire Line
-	9100 6350 9050 6350
-Wire Wire Line
-	9150 6300 9100 6300
-Connection ~ 9100 6300
-Wire Wire Line
-	9100 6300 9100 6350
 Wire Wire Line
 	3750 6950 4400 6950
 Text Label 4300 7150 2    50   ~ 0
@@ -1389,4 +1323,42 @@ NoConn ~ 3800 5500
 NoConn ~ 3800 5900
 NoConn ~ 3800 6000
 NoConn ~ 3800 6100
+$Comp
+L TactileSwitch:TS-1187A-B-A-B S1
+U 1 1 60C1533E
+P 8250 5800
+F 0 "S1" H 8250 6049 50  0000 C CNN
+F 1 "TS-1187A-B-A-B" H 8250 5958 50  0000 C CNN
+F 2 "TactileSwitch:SW_TS-1187A-B-A-B" H 8250 5800 50  0001 L BNN
+F 3 "" H 8250 5800 50  0001 L BNN
+F 4 "XKB Industrial Precision" H 8250 5800 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendations" H 8250 5800 50  0001 L BNN "STANDARD"
+F 6 "1.5mm" H 8250 5800 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "A0" H 8250 5800 50  0001 L BNN "PARTREV"
+	1    8250 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TactileSwitch:TS-1187A-B-A-B S2
+U 1 1 60C15961
+P 8250 6200
+F 0 "S2" H 8250 6449 50  0000 C CNN
+F 1 "TS-1187A-B-A-B" H 8250 6358 50  0000 C CNN
+F 2 "TactileSwitch:SW_TS-1187A-B-A-B" H 8250 6200 50  0001 L BNN
+F 3 "" H 8250 6200 50  0001 L BNN
+F 4 "XKB Industrial Precision" H 8250 6200 50  0001 L BNN "MANUFACTURER"
+F 5 "Manufacturer Recommendations" H 8250 6200 50  0001 L BNN "STANDARD"
+F 6 "1.5mm" H 8250 6200 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 7 "A0" H 8250 6200 50  0001 L BNN "PARTREV"
+	1    8250 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 5800 7950 5800
+Wire Wire Line
+	7850 6200 7950 6200
+Wire Wire Line
+	8650 6200 8550 6200
+Wire Wire Line
+	8550 5800 8650 5800
 $EndSCHEMATC
