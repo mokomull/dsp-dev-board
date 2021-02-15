@@ -128,10 +128,10 @@ Text HLabel 5250 3750 0    50   Output ~ 0
 BCLK
 Wire Wire Line
 	5250 3750 5400 3750
-Text HLabel 5250 3650 0    50   Output ~ 0
+Text HLabel 4800 3650 0    50   Output ~ 0
 WCLK
 Wire Wire Line
-	5250 3650 5400 3650
+	4800 3650 4950 3650
 Text HLabel 5250 3350 0    50   Input ~ 0
 DAC
 Wire Wire Line
@@ -140,7 +140,6 @@ Text HLabel 5250 3550 0    50   Output ~ 0
 ADC
 Wire Wire Line
 	5250 3550 5400 3550
-NoConn ~ 5400 3450
 Text HLabel 5250 4050 0    50   Input ~ 0
 SCLK
 Wire Wire Line
@@ -444,4 +443,11 @@ Wire Wire Line
 Wire Wire Line
 	4800 4250 5400 4250
 NoConn ~ 6800 4750
+Wire Wire Line
+	4950 3650 4950 3450
+Wire Wire Line
+	4950 3450 5400 3450
+Connection ~ 4950 3650
+Wire Wire Line
+	4950 3650 5400 3650
 $EndSCHEMATC
