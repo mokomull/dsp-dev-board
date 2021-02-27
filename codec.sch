@@ -60,50 +60,27 @@ F 3 "~" H 2100 2900 50  0001 C CNN
 	1    2100 2900
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 2650 2100 2750
+Wire Wire Line
+	2100 3050 2100 3100
+Wire Wire Line
+	2100 3100 2550 3100
 $Comp
-L Device:C C25
-U 1 1 600750CE
+L Device:C C29
+U 1 1 600750DE
 P 2550 2900
-F 0 "C25" H 2665 2946 50  0000 L CNN
-F 1 "1u" H 2665 2855 50  0000 L CNN
+F 0 "C29" H 2665 2946 50  0000 L CNN
+F 1 "10u" H 2665 2855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 2750 50  0001 C CNN
 F 3 "~" H 2550 2900 50  0001 C CNN
 	1    2550 2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 2650 2550 2750
-Wire Wire Line
-	2100 2650 2100 2750
-Wire Wire Line
-	2100 3050 2100 3100
-Wire Wire Line
 	2550 3100 2550 3050
 Wire Wire Line
-	2100 3100 2550 3100
-Wire Wire Line
-	2100 2650 2550 2650
-$Comp
-L Device:C C29
-U 1 1 600750DE
-P 3000 2900
-F 0 "C29" H 3115 2946 50  0000 L CNN
-F 1 "10u" H 3115 2855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 2750 50  0001 C CNN
-F 3 "~" H 3000 2900 50  0001 C CNN
-	1    3000 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 3100 3000 3100
-Wire Wire Line
-	3000 3100 3000 3050
-Connection ~ 2550 3100
-Wire Wire Line
-	3000 2750 3000 2650
-Wire Wire Line
-	3000 2650 2550 2650
-Connection ~ 2550 2650
+	2550 2750 2550 2650
 NoConn ~ 5400 4450
 NoConn ~ 6800 3450
 NoConn ~ 6800 3550
@@ -158,7 +135,6 @@ Text GLabel 1950 2650 0    50   Input ~ 0
 3.3V
 Wire Wire Line
 	1950 2650 2100 2650
-Connection ~ 2100 2650
 $Comp
 L power:GND #PWR040
 U 1 1 600DD992
@@ -172,11 +148,10 @@ F 3 "" H 2550 3200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 3200 2550 3100
-Text Label 3150 2650 0    50   ~ 0
+Text Label 2700 2650 0    50   ~ 0
 DCVDD
 Wire Wire Line
-	3150 2650 3000 2650
-Connection ~ 3000 2650
+	2700 2650 2550 2650
 Text Label 5900 3050 1    50   ~ 0
 DCVDD
 Wire Wire Line
@@ -192,55 +167,31 @@ F 3 "~" H 2100 3800 50  0001 C CNN
 	1    2100 3800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 3550 2100 3650
+Wire Wire Line
+	2100 3950 2100 4000
+Wire Wire Line
+	2100 4000 2550 4000
 $Comp
-L Device:C C26
-U 1 1 600E70BD
+L Device:C C30
+U 1 1 600E70C9
 P 2550 3800
-F 0 "C26" H 2665 3846 50  0000 L CNN
-F 1 "1u" H 2665 3755 50  0000 L CNN
+F 0 "C30" H 2665 3846 50  0000 L CNN
+F 1 "10u" H 2665 3755 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 3650 50  0001 C CNN
 F 3 "~" H 2550 3800 50  0001 C CNN
 	1    2550 3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 3550 2550 3650
-Wire Wire Line
-	2100 3550 2100 3650
-Wire Wire Line
-	2100 3950 2100 4000
-Wire Wire Line
 	2550 4000 2550 3950
 Wire Wire Line
-	2100 4000 2550 4000
-Wire Wire Line
-	2100 3550 2550 3550
-$Comp
-L Device:C C30
-U 1 1 600E70C9
-P 3000 3800
-F 0 "C30" H 3115 3846 50  0000 L CNN
-F 1 "10u" H 3115 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 3650 50  0001 C CNN
-F 3 "~" H 3000 3800 50  0001 C CNN
-	1    3000 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 4000 3000 4000
-Wire Wire Line
-	3000 4000 3000 3950
-Connection ~ 2550 4000
-Wire Wire Line
-	3000 3650 3000 3550
-Wire Wire Line
-	3000 3550 2550 3550
-Connection ~ 2550 3550
+	2550 3650 2550 3550
 Text GLabel 1950 3550 0    50   Input ~ 0
 3.3V
 Wire Wire Line
 	1950 3550 2100 3550
-Connection ~ 2100 3550
 $Comp
 L power:GND #PWR041
 U 1 1 600E70D8
@@ -254,11 +205,10 @@ F 3 "" H 2550 4100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 4100 2550 4000
-Text Label 3150 3550 0    50   ~ 0
+Text Label 2700 3550 0    50   ~ 0
 DBVDD
 Wire Wire Line
-	3150 3550 3000 3550
-Connection ~ 3000 3550
+	2700 3550 2550 3550
 $Comp
 L Device:C C23
 U 1 1 600EA2F4
@@ -270,55 +220,31 @@ F 3 "~" H 2100 4700 50  0001 C CNN
 	1    2100 4700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 4450 2100 4550
+Wire Wire Line
+	2100 4850 2100 4900
+Wire Wire Line
+	2100 4900 2550 4900
 $Comp
-L Device:C C27
-U 1 1 600EA2FA
+L Device:C C31
+U 1 1 600EA306
 P 2550 4700
-F 0 "C27" H 2665 4746 50  0000 L CNN
-F 1 "1u" H 2665 4655 50  0000 L CNN
+F 0 "C31" H 2665 4746 50  0000 L CNN
+F 1 "10u" H 2665 4655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 4550 50  0001 C CNN
 F 3 "~" H 2550 4700 50  0001 C CNN
 	1    2550 4700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 4450 2550 4550
-Wire Wire Line
-	2100 4450 2100 4550
-Wire Wire Line
-	2100 4850 2100 4900
-Wire Wire Line
 	2550 4900 2550 4850
 Wire Wire Line
-	2100 4900 2550 4900
-Wire Wire Line
-	2100 4450 2550 4450
-$Comp
-L Device:C C31
-U 1 1 600EA306
-P 3000 4700
-F 0 "C31" H 3115 4746 50  0000 L CNN
-F 1 "10u" H 3115 4655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 4550 50  0001 C CNN
-F 3 "~" H 3000 4700 50  0001 C CNN
-	1    3000 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 4900 3000 4900
-Wire Wire Line
-	3000 4900 3000 4850
-Connection ~ 2550 4900
-Wire Wire Line
-	3000 4550 3000 4450
-Wire Wire Line
-	3000 4450 2550 4450
-Connection ~ 2550 4450
+	2550 4550 2550 4450
 Text GLabel 1950 4450 0    50   Input ~ 0
 3.3V
 Wire Wire Line
 	1950 4450 2100 4450
-Connection ~ 2100 4450
 $Comp
 L power:GND #PWR042
 U 1 1 600EA315
@@ -332,11 +258,10 @@ F 3 "" H 2550 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 5000 2550 4900
-Text Label 3150 4450 0    50   ~ 0
+Text Label 2700 4450 0    50   ~ 0
 AVDD
 Wire Wire Line
-	3150 4450 3000 4450
-Connection ~ 3000 4450
+	2700 4450 2550 4450
 $Comp
 L Device:C C24
 U 1 1 600F07D0
@@ -348,55 +273,31 @@ F 3 "~" H 2100 5600 50  0001 C CNN
 	1    2100 5600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2100 5350 2100 5450
+Wire Wire Line
+	2100 5750 2100 5800
+Wire Wire Line
+	2100 5800 2550 5800
 $Comp
-L Device:C C28
-U 1 1 600F07D6
+L Device:C C32
+U 1 1 600F07E2
 P 2550 5600
-F 0 "C28" H 2665 5646 50  0000 L CNN
-F 1 "1u" H 2665 5555 50  0000 L CNN
+F 0 "C32" H 2665 5646 50  0000 L CNN
+F 1 "10u" H 2665 5555 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2588 5450 50  0001 C CNN
 F 3 "~" H 2550 5600 50  0001 C CNN
 	1    2550 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 5350 2550 5450
-Wire Wire Line
-	2100 5350 2100 5450
-Wire Wire Line
-	2100 5750 2100 5800
-Wire Wire Line
 	2550 5800 2550 5750
 Wire Wire Line
-	2100 5800 2550 5800
-Wire Wire Line
-	2100 5350 2550 5350
-$Comp
-L Device:C C32
-U 1 1 600F07E2
-P 3000 5600
-F 0 "C32" H 3115 5646 50  0000 L CNN
-F 1 "10u" H 3115 5555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 5450 50  0001 C CNN
-F 3 "~" H 3000 5600 50  0001 C CNN
-	1    3000 5600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 5800 3000 5800
-Wire Wire Line
-	3000 5800 3000 5750
-Connection ~ 2550 5800
-Wire Wire Line
-	3000 5450 3000 5350
-Wire Wire Line
-	3000 5350 2550 5350
-Connection ~ 2550 5350
+	2550 5450 2550 5350
 Text GLabel 1950 5350 0    50   Input ~ 0
 3.3V
 Wire Wire Line
 	1950 5350 2100 5350
-Connection ~ 2100 5350
 $Comp
 L power:GND #PWR043
 U 1 1 600F07F1
@@ -410,11 +311,10 @@ F 3 "" H 2550 5900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2550 5900 2550 5800
-Text Label 3150 5350 0    50   ~ 0
+Text Label 2700 5350 0    50   ~ 0
 HPVDD
 Wire Wire Line
-	3150 5350 3000 5350
-Connection ~ 3000 5350
+	2700 5350 2550 5350
 Text Label 6000 3050 1    50   ~ 0
 DBVDD
 Wire Wire Line
@@ -450,4 +350,24 @@ Wire Wire Line
 Connection ~ 4950 3650
 Wire Wire Line
 	4950 3650 5400 3650
+Connection ~ 2550 3100
+Wire Wire Line
+	2100 2650 2550 2650
+Connection ~ 2100 2650
+Connection ~ 2550 2650
+Connection ~ 2550 4000
+Wire Wire Line
+	2550 3550 2100 3550
+Connection ~ 2550 3550
+Connection ~ 2100 3550
+Connection ~ 2550 4900
+Wire Wire Line
+	2550 4450 2100 4450
+Connection ~ 2550 4450
+Connection ~ 2100 4450
+Connection ~ 2550 5800
+Wire Wire Line
+	2550 5350 2100 5350
+Connection ~ 2550 5350
+Connection ~ 2100 5350
 $EndSCHEMATC
