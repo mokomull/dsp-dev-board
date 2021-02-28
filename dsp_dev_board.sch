@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Operational:TL072 U1
-U 1 1 5FFB8A7E
-P 8300 1800
-F 0 "U1" H 8300 2167 50  0000 C CNN
-F 1 "TL072" H 8300 2076 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8300 1800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8300 1800 50  0001 C CNN
-	1    8300 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R9
 U 1 1 5FFBB5A8
 P 9400 1800
@@ -328,17 +317,6 @@ Wire Wire Line
 	7850 3150 7700 3150
 Wire Wire Line
 	7950 2950 8000 2950
-$Comp
-L Amplifier_Operational:TL072 U1
-U 2 1 600BA0CD
-P 8300 3050
-F 0 "U1" H 8300 3417 50  0000 C CNN
-F 1 "TL072" H 8300 3326 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8300 3050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8300 3050 50  0001 C CNN
-	2    8300 3050
-	1    0    0    -1  
-$EndComp
 Text Label 6750 3150 2    50   ~ 0
 audio_out
 Wire Wire Line
@@ -757,4 +735,26 @@ F 3 "" H 1350 950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 950  1350 850 
+$Comp
+L Amplifier_Operational:TL072 U1
+U 2 1 6045F95D
+P 8300 1800
+F 0 "U1" H 8300 2167 50  0000 C CNN
+F 1 "TL072" H 8300 2076 50  0000 C CNN
+F 2 "" H 8300 1800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8300 1800 50  0001 C CNN
+	2    8300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 1 1 6046444C
+P 8300 3050
+F 0 "U1" H 8300 3417 50  0000 C CNN
+F 1 "TL072" H 8300 3326 50  0000 C CNN
+F 2 "" H 8300 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8300 3050 50  0001 C CNN
+	1    8300 3050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
