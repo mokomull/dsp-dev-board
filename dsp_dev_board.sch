@@ -741,7 +741,7 @@ U 2 1 6045F95D
 P 8300 1800
 F 0 "U1" H 8300 2167 50  0000 C CNN
 F 1 "TL072" H 8300 2076 50  0000 C CNN
-F 2 "" H 8300 1800 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8300 1800 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8300 1800 50  0001 C CNN
 	2    8300 1800
 	1    0    0    -1  
@@ -752,7 +752,7 @@ U 1 1 6046444C
 P 8300 3050
 F 0 "U1" H 8300 3417 50  0000 C CNN
 F 1 "TL072" H 8300 3326 50  0000 C CNN
-F 2 "" H 8300 3050 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8300 3050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8300 3050 50  0001 C CNN
 	1    8300 3050
 	1    0    0    -1  
