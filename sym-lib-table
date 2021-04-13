@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name TactileSwitch)(type Legacy)(uri ${KIPRJMOD}/TS-1187A-B-A-B/TS-1187A-B-A-B.lib)(options "")(descr ""))
   (lib (name USB_C)(type Legacy)(uri ${KIPRJMOD}/DX07S016JA1R1500/DX07S016JA1R1500.lib)(options "")(descr ""))
+  (lib (name dsp_dev_board-rescue)(type Legacy)(uri ${KIPRJMOD}/dsp_dev_board-rescue.lib)(options "")(descr ""))
 )
