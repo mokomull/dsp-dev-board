@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -569,22 +569,22 @@ F 3 "~" H 1300 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 3200 2100 3200
-Text Label 1300 3200 2    50   ~ 0
+	1000 3200 2100 3200
+Text Label 1000 3200 2    50   ~ 0
 BOOT0
 Wire Wire Line
-	1300 3200 1300 3350
+	1000 3200 1000 3350
 Wire Wire Line
-	1300 3650 1300 3700
+	1000 3650 1000 3700
 $Comp
 L Device:R R11
 U 1 1 602B1BCD
-P 1300 3500
-F 0 "R11" H 1370 3546 50  0000 L CNN
-F 1 "10k" H 1370 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1230 3500 50  0001 C CNN
-F 3 "~" H 1300 3500 50  0001 C CNN
-	1    1300 3500
+P 1000 3500
+F 0 "R11" H 1070 3546 50  0000 L CNN
+F 1 "10k" H 1070 3455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 930 3500 50  0001 C CNN
+F 3 "~" H 1000 3500 50  0001 C CNN
+	1    1000 3500
 	1    0    0    -1  
 $EndComp
 Text Label 2000 4200 2    50   ~ 0
@@ -606,12 +606,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR016
 U 1 1 6007ECDF
-P 1300 3700
-F 0 "#PWR016" H 1300 3450 50  0001 C CNN
-F 1 "GND" H 1305 3527 50  0000 C CNN
-F 2 "" H 1300 3700 50  0001 C CNN
-F 3 "" H 1300 3700 50  0001 C CNN
-	1    1300 3700
+P 1000 3700
+F 0 "#PWR016" H 1000 3450 50  0001 C CNN
+F 1 "GND" H 1005 3527 50  0000 C CNN
+F 2 "" H 1000 3700 50  0001 C CNN
+F 3 "" H 1000 3700 50  0001 C CNN
+	1    1000 3700
 	1    0    0    -1  
 $EndComp
 Connection ~ 3200 1150
@@ -633,11 +633,11 @@ Wire Wire Line
 	3200 1150 3200 1200
 Text GLabel 3300 1050 1    50   Input ~ 0
 3.3V
-Text HLabel 4000 5800 2    50   Output ~ 0
+Text HLabel 2000 3300 0    50   Output ~ 0
 SDOUT
-Text HLabel 4000 5700 2    50   Output ~ 0
+Text HLabel 2000 3500 0    50   Output ~ 0
 ~CSB
-Text HLabel 4500 5100 0    50   Output ~ 0
+Text HLabel 2000 3400 0    50   Output ~ 0
 SCLK
 Text Label 4000 3700 0    50   ~ 0
 TRACESWO
@@ -1081,16 +1081,48 @@ NoConn ~ 2100 3900
 NoConn ~ 2100 3800
 NoConn ~ 2100 3700
 NoConn ~ 2100 3600
-NoConn ~ 2100 3500
-NoConn ~ 2100 3400
-NoConn ~ 2100 3300
-NoConn ~ 2100 2900
-NoConn ~ 2100 3000
-NoConn ~ 2100 3100
 NoConn ~ 2100 1700
 NoConn ~ 2100 1800
 NoConn ~ 3900 2800
 NoConn ~ 3900 3300
 NoConn ~ 3900 3400
 NoConn ~ 3900 3800
+Wire Wire Line
+	2100 3400 2000 3400
+Wire Wire Line
+	2000 3500 2100 3500
+Wire Wire Line
+	2100 3300 2000 3300
+Text Notes 1650 3450 2    50   ~ 0
+SERCOM 1\nIOSET 1
+Text HLabel 2000 2900 0    50   BiDi ~ 0
+SDA
+Text HLabel 2000 3000 0    50   Output ~ 0
+SCL
+Wire Wire Line
+	2000 2900 2100 2900
+Wire Wire Line
+	2100 3000 2000 3000
+Text HLabel 2000 3100 0    50   Output ~ 0
+~CODEC_RST
+Wire Wire Line
+	2100 3100 2000 3100
+Text Label 4000 1700 0    50   ~ 0
+PB00
+Text Label 4000 1800 0    50   ~ 0
+PB01
+Text Label 4000 1900 0    50   ~ 0
+PB02
+Text Label 4000 2000 0    50   ~ 0
+PB03
+Text Label 4000 2100 0    50   ~ 0
+PB04
+Text Label 4000 2200 0    50   ~ 0
+PB05
+Text Label 4000 2300 0    50   ~ 0
+PB06
+Text Label 4000 2400 0    50   ~ 0
+PB07
+Text Notes 1750 3000 2    50   ~ 0
+SERCOM 2\nIOSET 1
 $EndSCHEMATC
