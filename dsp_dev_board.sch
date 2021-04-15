@@ -840,9 +840,9 @@ Connection ~ 6800 4650
 Wire Wire Line
 	6800 4650 7100 4650
 Wire Wire Line
-	6450 5550 9300 5550
+	6450 5550 8550 5550
 Wire Wire Line
-	6450 5650 9300 5650
+	6450 5650 8850 5650
 Wire Wire Line
 	6450 5750 9300 5750
 $Comp
@@ -906,4 +906,49 @@ Text GLabel 4350 2400 2    50   Output ~ 0
 Wire Wire Line
 	4350 2400 4200 2400
 Connection ~ 4200 2400
+Wire Wire Line
+	8550 5500 8550 5550
+Connection ~ 8550 5550
+Wire Wire Line
+	8550 5550 9300 5550
+$Comp
+L Device:R R20
+U 1 1 608A7F3C
+P 8550 5350
+F 0 "R20" H 8400 5300 50  0000 C CNN
+F 1 "10k" H 8400 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8480 5350 50  0001 C CNN
+F 3 "~" H 8550 5350 50  0001 C CNN
+	1    8550 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R21
+U 1 1 608A8BFD
+P 8850 5350
+F 0 "R21" H 8700 5300 50  0000 C CNN
+F 1 "10k" H 8700 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8780 5350 50  0001 C CNN
+F 3 "~" H 8850 5350 50  0001 C CNN
+	1    8850 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8850 5500 8850 5650
+Connection ~ 8850 5650
+Wire Wire Line
+	8850 5650 9300 5650
+Wire Wire Line
+	8850 5200 8850 5150
+Wire Wire Line
+	8850 5150 8550 5150
+Wire Wire Line
+	8550 5150 8550 5200
+Text GLabel 8400 5100 0    50   Input ~ 0
+3.3V
+Wire Wire Line
+	8400 5100 8550 5100
+Wire Wire Line
+	8550 5100 8550 5150
+Connection ~ 8550 5150
 $EndSCHEMATC
