@@ -825,36 +825,6 @@ Wire Wire Line
 Wire Wire Line
 	9700 1500 9800 1500
 Wire Wire Line
-	10300 1800 10300 1900
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J11
-U 1 1 605770D1
-P 10000 1800
-F 0 "J11" H 10050 2317 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 10050 2226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 10000 1800 50  0001 C CNN
-F 3 "~" H 10000 1800 50  0001 C CNN
-	1    10000 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 2100 10300 2200
-Wire Wire Line
-	10300 1700 10300 1800
-Wire Wire Line
-	10300 1900 10300 2000
-Connection ~ 10300 1900
-Wire Wire Line
-	10300 2000 10300 2100
-Connection ~ 10300 2000
-Connection ~ 10300 2100
-Wire Wire Line
-	10300 1500 10300 1600
-Wire Wire Line
-	10300 1600 10300 1700
-Connection ~ 10300 1600
-Connection ~ 10300 1700
-Wire Wire Line
 	1300 4650 1300 4700
 $Comp
 L TactileSwitch:TS-1187A-B-A-B S1
@@ -1125,4 +1095,55 @@ Text Label 4000 2400 0    50   ~ 0
 PB07
 Text Notes 1750 3000 2    50   ~ 0
 SERCOM 2\nIOSET 1
+Text HLabel 9700 2300 0    50   BiDi ~ 0
+SDA
+Text HLabel 9700 2400 0    50   Output ~ 0
+SCL
+Text HLabel 9700 2500 0    50   Output ~ 0
+~CODEC_RST
+Wire Wire Line
+	10300 1800 10300 1900
+$Comp
+L Connector_Generic:Conn_02x11_Odd_Even J11
+U 1 1 6092653D
+P 10000 2000
+F 0 "J11" H 10050 2717 50  0000 C CNN
+F 1 "Conn_02x11_Odd_Even" H 10050 2626 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x11_P2.54mm_Vertical" H 10000 2000 50  0001 C CNN
+F 3 "~" H 10000 2000 50  0001 C CNN
+	1    10000 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10300 1700 10300 1800
+Wire Wire Line
+	10300 1500 10300 1600
+Connection ~ 10300 1600
+Wire Wire Line
+	10300 1600 10300 1700
+Connection ~ 10300 1700
+Connection ~ 10300 1900
+Wire Wire Line
+	10300 1900 10300 2000
+Connection ~ 10300 2000
+Wire Wire Line
+	10300 2000 10300 2100
+Connection ~ 10300 2100
+Wire Wire Line
+	10300 2100 10300 2200
+Connection ~ 10300 2200
+Wire Wire Line
+	10300 2200 10300 2300
+Connection ~ 10300 2300
+Wire Wire Line
+	10300 2300 10300 2400
+Connection ~ 10300 2400
+Wire Wire Line
+	10300 2400 10300 2500
+Wire Wire Line
+	9700 2300 9800 2300
+Wire Wire Line
+	9800 2400 9700 2400
+Wire Wire Line
+	9800 2500 9700 2500
 $EndSCHEMATC
