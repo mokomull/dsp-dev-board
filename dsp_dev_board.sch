@@ -155,7 +155,7 @@ Text Label 10250 1800 0    50   ~ 0
 audio_in
 Wire Wire Line
 	10250 1800 9850 1800
-Text Label 6950 4450 2    50   ~ 0
+Text Label 6650 4450 2    50   ~ 0
 audio_in
 Wire Wire Line
 	6950 4450 7100 4450
@@ -324,7 +324,7 @@ Text Label 6750 3150 2    50   ~ 0
 audio_out
 Wire Wire Line
 	6750 3150 7050 3150
-Text Label 8150 4450 0    50   ~ 0
+Text Label 8450 4450 0    50   ~ 0
 audio_out
 Wire Wire Line
 	8150 4450 8000 4450
@@ -776,14 +776,10 @@ F9 "DIN" I L 9300 4850 50
 F10 "~CODEC_RST" I L 9300 5750 50 
 F11 "DOUT" O L 9300 4750 50 
 $EndSheet
-Text Label 9150 4450 2    50   ~ 0
+Text Label 8950 4150 2    50   ~ 0
 audio_in
-Wire Wire Line
-	9150 4450 9300 4450
-Text Label 10600 4450 0    50   ~ 0
+Text Label 10800 4150 0    50   ~ 0
 audio_out
-Wire Wire Line
-	10600 4450 10450 4450
 Wire Wire Line
 	6800 5050 6800 5000
 Wire Wire Line
@@ -980,4 +976,56 @@ F 3 "" H 2950 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 1800 2950 1850
+$Comp
+L Device:R R?
+U 1 1 607E529D
+P 6800 4450
+F 0 "R?" V 6593 4450 50  0000 C CNN
+F 1 "0 DNP" V 6684 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6730 4450 50  0001 C CNN
+F 3 "~" H 6800 4450 50  0001 C CNN
+	1    6800 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 607E8DDA
+P 8300 4450
+F 0 "R?" V 8093 4450 50  0000 C CNN
+F 1 "0 DNP" V 8184 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8230 4450 50  0001 C CNN
+F 3 "~" H 8300 4450 50  0001 C CNN
+	1    8300 4450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 4450 9300 4450
+$Comp
+L Device:R R?
+U 1 1 607EA958
+P 9100 4150
+F 0 "R?" V 8893 4150 50  0000 C CNN
+F 1 "0 DNP" V 8984 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9030 4150 50  0001 C CNN
+F 3 "~" H 9100 4150 50  0001 C CNN
+	1    9100 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9250 4150 9250 4450
+$Comp
+L Device:R R?
+U 1 1 607F9AAB
+P 10650 4150
+F 0 "R?" V 10443 4150 50  0000 C CNN
+F 1 "0 DNP" V 10534 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10580 4150 50  0001 C CNN
+F 3 "~" H 10650 4150 50  0001 C CNN
+	1    10650 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10500 4150 10500 4450
+Wire Wire Line
+	10500 4450 10450 4450
 $EndSCHEMATC
