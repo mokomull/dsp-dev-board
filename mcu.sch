@@ -944,17 +944,6 @@ F 3 "" H 3100 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 3100 5050
-$Comp
-L MCU_Microchip_SAME:ATSAME51J18A-A U3
-U 1 1 6077D49B
-P 3000 3100
-F 0 "U3" H 2550 1200 50  0000 C CNN
-F 1 "ATSAME51J18A-A" H 2550 1100 50  0000 C CNN
-F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 4300 5000 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" H 3000 3100 50  0001 C CNN
-	1    3000 3100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2000 4100 2100 4100
 Wire Wire Line
@@ -1185,4 +1174,15 @@ Wire Wire Line
 	700  4700 850  4700
 Wire Wire Line
 	1150 4700 1300 4700
+$Comp
+L MCU_Microchip_SAME:ATSAME51J20A-A U3
+U 1 1 6088AEBB
+P 3000 3100
+F 0 "U3" H 3000 1111 50  0000 C CNN
+F 1 "ATSAME51J20A-A" H 3000 1020 50  0000 C CNN
+F 2 "Package_QFP:TQFP-64_10x10mm_P0.5mm" H 4300 5000 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/60001507E.pdf" H 3000 3100 50  0001 C CNN
+	1    3000 3100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

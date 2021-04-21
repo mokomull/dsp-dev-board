@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Audio:WM8731SEDS U4
-U 1 1 6005E3AC
-P 6100 4050
-F 0 "U4" H 5250 5100 50  0000 C CNN
-F 1 "WM8731SEDS" H 5450 5000 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 6100 2750 50  0001 C CNN
-F 3 "https://statics.cirrus.com/pubs/proDatasheet/WM8731_v4.9.pdf" H 6100 4050 50  0001 C CNN
-	1    6100 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR044
 U 1 1 60067126
 P 5900 5050
@@ -370,4 +359,15 @@ Wire Wire Line
 	2550 5350 2100 5350
 Connection ~ 2550 5350
 Connection ~ 2100 5350
+$Comp
+L Audio:WM8731CLSEFL U4
+U 1 1 6087E599
+P 6100 4050
+F 0 "U4" H 6100 3061 50  0000 C CNN
+F 1 "WM8731CLSEFL" H 6100 2970 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-28-1EP_5x5mm_P0.5mm_EP3.35x3.35mm" H 6100 2750 50  0001 C CNN
+F 3 "https://statics.cirrus.com/pubs/proDatasheet/WM8731_v4.9.pdf" H 6100 4050 50  0001 C CNN
+	1    6100 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
