@@ -517,17 +517,17 @@ F 3 "~" H 4600 6950 50  0001 C CNN
 $EndComp
 Text HLabel 9700 2200 0    50   Input ~ 0
 I2Sext_SD
-Text HLabel 9700 1900 0    50   Output ~ 0
+Text HLabel 9700 2300 0    50   Output ~ 0
 I2S_SD
 Text HLabel 9700 1700 0    50   Output ~ 0
 SCLK
 Text HLabel 9700 1500 0    50   Output ~ 0
 ~CSB
-Text HLabel 9700 2000 0    50   Input ~ 0
+Text HLabel 9700 2400 0    50   Input ~ 0
 WCLK
 Text HLabel 9700 2100 0    50   Input ~ 0
 BCLK
-Text HLabel 9700 1800 0    50   Output ~ 0
+Text HLabel 9700 2500 0    50   Output ~ 0
 I2S2_MCK
 $Comp
 L Device:Crystal Y1
@@ -1082,11 +1082,11 @@ Text Label 4000 2400 0    50   ~ 0
 PB07
 Text Notes 1750 3000 2    50   ~ 0
 SERCOM 2\nIOSET 1
-Text HLabel 9700 2300 0    50   BiDi ~ 0
+Text HLabel 9700 2000 0    50   BiDi ~ 0
 SDA
-Text HLabel 9700 2400 0    50   Output ~ 0
+Text HLabel 9700 1900 0    50   Output ~ 0
 SCL
-Text HLabel 9700 2500 0    50   Output ~ 0
+Text HLabel 9700 1800 0    50   Output ~ 0
 ~CODEC_RST
 Wire Wire Line
 	10300 1800 10300 1900
