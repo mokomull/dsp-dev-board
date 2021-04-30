@@ -89,12 +89,12 @@ $Comp
 L Connector:Barrel_Jack J4
 U 1 1 60004038
 P 2050 1500
-F 0 "J4" H 2107 1825 50  0000 C CNN
-F 1 "9v_jack" H 2107 1734 50  0000 C CNN
+F 0 "J4" H 2050 1200 50  0000 C CNN
+F 1 "9v_jack" H 2050 1300 50  0000 C CNN
 F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2100 1460 50  0001 C CNN
 F 3 "~" H 2100 1460 50  0001 C CNN
 	1    2050 1500
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Text GLabel 3050 1400 2    50   Output ~ 0
 9V
