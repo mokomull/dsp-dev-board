@@ -1,0 +1,16 @@
+[package]
+name = "dsp-dev-board"
+version = "0.1.0"
+authors = ["Matt Mullins <mmullins@mmlx.us>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cortex-m = "0.6.0"
+cortex-m-rt = "0.6.10"
+panic-halt = "0.2.0"
+
+[dependencies.atsamd-hal]
+git = "https://github.com/atsamd-rs/atsamd.git"
+features = [ "same51j" ]
