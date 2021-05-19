@@ -14,3 +14,6 @@ panic-halt = "0.2.0"
 [dependencies.atsamd-hal]
 git = "https://github.com/atsamd-rs/atsamd.git"
 features = [ "same51j" ]
+
+[profile.release]
+debug = true
