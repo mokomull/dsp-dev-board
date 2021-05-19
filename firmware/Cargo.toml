@@ -10,6 +10,7 @@ edition = "2018"
 cortex-m = "0.6.0"
 cortex-m-rt = "0.6.10"
 panic-halt = "0.2.0"
+wm8731 = "0.1.0"
 
 [dependencies.atsamd-hal]
 git = "https://github.com/atsamd-rs/atsamd.git"

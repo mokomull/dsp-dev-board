@@ -134,6 +134,7 @@ dependencies = [
  "cortex-m 0.6.7",
  "cortex-m-rt",
  "panic-halt",
+ "wm8731",
 ]
 
 [[package]]
@@ -358,3 +359,9 @@ checksum = "0d67cb4616d99b940db1d6bd28844ff97108b498a6ca850e5b6191a532063286"
 dependencies = [
  "vcell",
 ]
+
+[[package]]
+name = "wm8731"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8d8e680c4702213927ba011466a00af42a6f09272bf45f8571f3552e94ad62a8"
