@@ -261,6 +261,9 @@ fn main() -> ! {
         for sample in &samples {
             while i2s.intflag.read().txrdy0().bit_is_clear() {}
             i2s.txdata.write(|w| unsafe { w.data().bits(*sample) });
+
+            while i2s.intflag.read().txrdy0().bit_is_clear() {}
+            i2s.txdata.write(|w| unsafe { w.data().bits(0) });
         }
     }
 }
