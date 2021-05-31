@@ -277,7 +277,7 @@ where
     SPI::Error: core::fmt::Debug,
     GPIO: embedded_hal::digital::v2::OutputPin,
     GPIO::Error: core::fmt::Debug,
-    DELAY: embedded_hal::blocking::delay::DelayUs<u8>,
+    DELAY: embedded_hal::blocking::delay::DelayUs<u16>,
 {
     fn set_register(&mut self, register: wm8731::Register) {
         self.not_cs.set_low().unwrap();
@@ -290,6 +290,10 @@ where
             ],
         )
         .expect("SPI write failed");
+
+        // the atsamd_hal blocking implementation doesn't, like, actually block ... so delay long
+        // enough to get a whole command out
+        self.delay.delay_us(500);
 
         self.not_cs.set_high().unwrap();
 
